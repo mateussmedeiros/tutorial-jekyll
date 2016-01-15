@@ -1,0 +1,34 @@
+<header class="header">
+  <!-- Botão do Menu mobile -->
+  <button aria-expanded="false" aria-controls="menu" aria-label="Clique para abrir o menu" class="bt-menu"><svg class="icon-top icon-menu"><use xlink:href="#icon-menu"></use></svg></button>
+  <!-- Menu -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#"> Nav Item 1 </a></li>
+      <li><a href="#"> Nav Item 2 </a></li>
+      <li><a href="#"> Nav Item 3 </a></li>
+      <li><a href="#"> Nav Item 4 </a></li>
+    </ul>
+  </nav>
+  
+  <!-- Botão da Pesquisa -->
+  <button aria-expanded="false" aria-controls="search-container" aria-label="Pesquisar no Blog" class="bt-search"><svg class="icon-top icon-search"><use xlink:href="#icon-search"></use></svg></button>
+  <!-- Container da Pesquisa -->
+  <div id="search-container">
+    <!-- Barra de Pesquisa -->
+    <input type="text" id="search-input" placeholder="Pesquisar posts no blog...">
+    <!-- Botão de fechamento do container da pesquisa -->
+    <button aria-label="Fechar Barra de Pesquisa" class="bt-close"><svg class="icon-top icon-close"><use xlink:href="#icon-close"></use></svg></button>
+    <!-- Lista de resultados -->
+    <ul id="results-container"></ul>
+  </div>
+
+  <!-- Título do Blog -->
+  <hgroup class="title">
+    <!-- Título Principal -->
+    <h1> <a href="/"> {{ site.title }} </a> </h1>  
+    <!-- Subtítulo -->
+    <h2> <a href="/"> {{ site.subtitle }} </a> </h2>
+  </hgroup>
+  
+</header>
