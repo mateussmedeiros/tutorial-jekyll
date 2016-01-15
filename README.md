@@ -1,4 +1,4 @@
-# tutorial-jekyll
+# Tutorial - Como criar um blog com Jekyll
 Repositório do tutorial de como criar um blog com Jekyll.
 
 Tutorial disponível em: [http://devmateusmedeiros.com,br](http://devmateusmedeiros.com,br)
