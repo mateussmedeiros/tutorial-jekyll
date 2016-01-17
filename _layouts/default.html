@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-
+  <!-- Incui o arquivo head.html -->
   {% include head.html %}
 
   <body>
-
+    <!-- Inclui o arquivo header.html -->
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      <!-- Inclui o conteúdo da página -->
+      {{ content }}
     </div>
 
+    <!-- Inclui o arquivo footer.html -->
     {% include footer.html %}
 
   </body>

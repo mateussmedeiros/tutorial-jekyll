@@ -4,20 +4,33 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
+    <!-- Procura os posts no blog e lista eles -->
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+        <!-- Inclui o título com link do post -->
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        <!-- Inclui a data e autor do post -->
+        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} {% if page.author %} | {{ page.author }} {% endif %}</span>
+
+        <!-- Inclui a descrição do post -->
+        <p class="post-description">{{ post.description }}</p>
+        
+        <!-- Inclui um Leia mais com o link do post -->
+        <a href="{{ post.permalink | prepend: site.baseurl }}"> Leia mais sobre {{ post.title }}...</a>
+        
+        <!-- Inclui as tags do post -->
+        {% include tags.html %}
       </li>
+
+      <hr>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+  <!-- Incrição do feed -->
+  <p class="rss-subscribe"> Inscreva-se <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
