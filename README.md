@@ -6,3 +6,4 @@ Tutorial disponível em: [http://devmateusmedeiros.com,br](http://devmateusmedei
 ## Partes dos tutorial
 
 - [Criando um blog com Jekyll - Parte 1](http://devmateusmedeiros.com.br/criando-um-blog-com-jekyll-parte-1/)
+- [Criando um blog com Jekyll - Parte 2](http://devmateusmedeiros.com.br/criando-um-blog-com-jekyll-parte-2/)
