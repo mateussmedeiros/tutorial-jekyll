@@ -2,7 +2,7 @@
 title: Tutorial Jekyll # Título do Blog
 subtitle: Como construir um blog com Jekyll # Subtítulo do Blog, opcional
 description: "Tutorial de como construir um blog com Jekyll, feito por Mateus Medeiros" # Descrição do Blog
-url: "http://devmateusmedeiros.com.br/tutorial-jekyll/" # Endereço do nosso blog
+url: "http://devmateusmedeiros.com.br/tutorial-jekyll" # Endereço do nosso blog
 
 # Author Settings
 author:
