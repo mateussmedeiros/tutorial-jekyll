@@ -1,0 +1,20 @@
+{
+  "name": "Tutorial Jekyll",
+  "homepage": "https://github.com/mateussmedeiros/tutorial-jekyll",
+  "authors": [
+    "Mateus Medeiros <mateusdesousamedeiros@hotmail.com>"
+  ],
+  "description": "Tutorial de como construir um blog com Jekyll",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "simple-jekyll-search": "latest",
+    "jquery": "latest"
+  }
+}

@@ -1,242 +1,259 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
+/*-----------------------
+---- Header | Footer ----
+-----------------------*/
+.header {
+    a {
+        text-decoration: none;
     }
 }
 
-.site-nav {
+.footer {
+    color: $branco;
+    text-shadow: 0px 2px 0px rgba(31, 116, 191, 1);
+
+    a {
+        color: $branco;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.header, .footer {
+    padding: 15px;
+    background: $azul;
+    text-align: center;
+}
+
+/*-------------------
+---- Título Site ----
+-------------------*/
+.title {
+    clear: both;
+    padding: 20px 0;
+    
+    a {
+        color: $branco;
+        text-shadow: 0px 5px 0px rgba(31, 116, 191, 1);
+    }
+
+    h1 a {
+        font-size: 32pt;
+        line-height: 42pt;
+        text-transform: uppercase;
+    }
+
+    h2 a {
+        font-size: 24pt;
+        line-height: 34pt;
+    }
+}
+
+/*------------
+---- Menu ----
+------------*/
+.bt-menu {
+    display: none;
+    float: left;
+}
+
+.menu {
+    li {
+        float: left;
+        margin: 0 15px 0 0;
+        list-style: none;
+
+        &:last-child {
+            margin-right: none;
+        }
+    }
+
+    a {
+        font-size: 16pt;
+        color: $branco;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/*----------------
+---- Pesquisa ----
+----------------*/
+.bt-search {
     float: right;
-    line-height: 56px;
+}
 
-    .menu-icon {
-        display: none;
+#search-container {
+    display: none;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    input[type=text]{
+        width: 400px;
+        height: 30px;
+        margin: 10px auto;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid $branco;
+        outline: 0;
+        text-align: center;
+        font-size: 16pt;
+        color: $branco;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+    ::-webkit-input-placeholder{
+        color: $branco;
+    }
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
+    :-ms-input-placeholder {
+        color: $branco;
+    }
+
+    ::-ms-input-placeholder {
+        color: $branco;
+    }
+
+    ::-moz-placeholder {
+        color: $branco;
+    }
+
+    a {
+        display: block;
+        margin: 10px;
+        color: $branco;
+
+        &:hover {
+            color: $azul;
+            text-decoration: underline;
         }
     }
+}  
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
+/*------------------
+---- Ícones SVG ----
+------------------*/
+.icon-top {
+    width: 25px;
+    height: 25px;
+    fill: $branco;
+    cursor: pointer;
 }
 
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+  fill: $azul;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+/*---------------------
+---- Página | Post ----
+---------------------*/
+.home {
+    text-align: center;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
- */
 .page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
     display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    padding: 35px 30px;
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+    h2, h3, h4, h5, h6 {
+        margin: 20px 0;
     }
+}
 
-    h3 {
-        font-size: 26px;
+.post-list {
+    list-style: none;
+}
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+.page-title,
+.post-title {
+  border-bottom: 1px solid $preto;
+  padding: 5px 0;
+}
+
+.post-meta {
+  font-size: 10pt;
+  line-height: 16pt;
+}
+
+.post-link {
+  text-decoration: none;
+  font-size: 24pt;
+  line-height: 28pt;
+}
+
+.tags {
+  margin-top: 1em;
+
+  a {
+    border-right: 1px solid $azul;
+    padding: 0 5px;
+
+    &:last-child {
+        border-right: none;
     }
+  }
+}
 
-    h4 {
-        font-size: 20px;
+/*-------------
+---- Autor ----
+-------------*/
+.img-author {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+  border: 3px solid $azul;
+}
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+.author {
+  background: darken($branco, 5%);
+  padding: 15px;
+  @extend %margins;
+
+  .details {
+    @extend %margins;
+  }
+
+  .name a {
+    font-size: 18pt;
+    text-decoration: none;
+  }
+}
+
+/*------------------------------------------------
+---- Botões de Compartilhamento | Comentários ----
+------------------------------------------------*/
+.share, .comments {
+  text-align: center;
+  border-top: 1px solid $preto;
+  padding: 10px;
+}
+
+.share {
+  a {
+    text-decoration: none;
+  }
+
+  .icon {
+    margin-top: 10px;
+    
+    &:hover {
+      fill: darken($azul, 15%);
     }
+  }
 }
