@@ -8,7 +8,7 @@ baseurl: "/tutorial-jekyll"
 # Author Settings
 author:
     name: Mateus Medeiros # Nome do autor
-    img: /assets/img/perfil.jpg # Imagem do Autor
+    img: http://devmateusmedeiros.com.br/assets/img/perfil.jpg # Imagem do Autor
     blog: http://devmateusmedeiros.com.br # Blog do autor
     email: mateus.sousamedeiros@gmail.com # Email do autor
     twitter: mateussousam # Twitter do autor
