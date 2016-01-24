@@ -10,19 +10,19 @@
   	<meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	
 	<!-- Caminho do arquivo CSS, pode ser alterado de acordo com o projeto -->
-  	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  	<link rel="stylesheet" href="{{ "http://devmateusmedeiros.com.br/tutorial-jekyll//assets/css/main.css" | prepend: site.baseurl }}">
   	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   	<!-- Caminho do Feed do blog -->
   	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   	<!-- Caminho do favicon do blog, também pode ser alterado -->
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://devmateusmedeiros.com.br/tutorial-jekyll//assets/img/favicon.ico" type="image/x-icon">
 	
 	<!-- Social Meta Tags: Facebook | Twitter | Google+ / Já está configurado para o blog -->
   	<!-- Social: Facebook / Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ "/assets/img/image-blog.png" | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ "http://devmateusmedeiros.com.br/tutorial-jekyll//assets/img/image-blog.png" | prepend: site.baseurl | prepend: site.url }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
 
