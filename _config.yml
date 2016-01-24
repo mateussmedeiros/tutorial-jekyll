@@ -2,7 +2,8 @@
 title: Tutorial Jekyll # Título do Blog
 subtitle: Como construir um blog com Jekyll # Subtítulo do Blog, opcional
 description: "Tutorial de como construir um blog com Jekyll, feito por Mateus Medeiros" # Descrição do Blog
-url: "http://devmateusmedeiros.com.br/tutorial-jekyll" # Endereço do nosso blog
+url: "http://devmateusmedeiros.com.br/" # Endereço do nosso blog
+baseurl: "/tutorial-jekyll"
 
 # Author Settings
 author:
@@ -16,9 +17,9 @@ author:
 
 # Build settings
 markdown: kramdown # Estilo do Markdown
-permalink: /tutorial-jekyll/:categories/:title/ # Configuração dos links do blog
-css_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/css" # Caminho dos arquivos css
-js_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/js" # Caminho dos arquivos js
-img_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/img" # Caminho das imagens
+permalink: /:categories/:title/ # Configuração dos links do blog
+css_folder:  "/assets/css" # Caminho dos arquivos css
+js_folder:  "/assets/js" # Caminho dos arquivos js
+img_folder:  "/assets/img" # Caminho das imagens
 sass:
     style: compressed # Configuração dos arquivos css gerados pelo sass, compressed gera o css minificado
