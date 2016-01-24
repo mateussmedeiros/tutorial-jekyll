@@ -16,7 +16,7 @@ author:
 
 # Build settings
 markdown: kramdown # Estilo do Markdown
-permalink: http://devmateusmedeiros.com.br/tutorial-jekyll/:categories/:title/ # Configuração dos links do blog
+permalink: /tutorial-jekyll/:categories/:title/ # Configuração dos links do blog
 css_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/css" # Caminho dos arquivos css
 js_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/js" # Caminho dos arquivos js
 img_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/img" # Caminho das imagens
