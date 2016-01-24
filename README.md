@@ -8,3 +8,4 @@ Tutorial disponível em: [http://devmateusmedeiros.com,br](http://devmateusmedei
 - [Criando um blog com Jekyll - Parte 1](http://devmateusmedeiros.com.br/criando-um-blog-com-jekyll-parte-1/)
 - [Criando um blog com Jekyll - Parte 2](http://devmateusmedeiros.com.br/criando-um-blog-com-jekyll-parte-2/)
 - [Criando um blog com Jekyll - Parte 3](http://devmateusmedeiros.com.br/criando-um-blog-com-jekyll-parte-3/)
+- [Criando um blog com Jekyll - Parte Final](http://devmateusmedeiros.com.br/criando-um-blog-com-jekyll-parte-final/)
