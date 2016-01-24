@@ -17,8 +17,8 @@ author:
 # Build settings
 markdown: kramdown # Estilo do Markdown
 permalink: /:categories/:title/ # Configuração dos links do blog
-css_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/css" # Caminho dos arquivos css
-js_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/js" # Caminho dos arquivos js
-img_folder:  "http://devmateusmedeiros.com.br/tutorial-jekyll/assets/img" # Caminho das imagens
+css_folder:  "/assets/css" # Caminho dos arquivos css
+js_folder:  "/assets/js" # Caminho dos arquivos js
+img_folder:  "/assets/img" # Caminho das imagens
 sass:
     style: compressed # Configuração dos arquivos css gerados pelo sass, compressed gera o css minificado
